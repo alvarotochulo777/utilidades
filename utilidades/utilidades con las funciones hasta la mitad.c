@@ -1570,12 +1570,66 @@ int obtenerEntero (void)
   return valor;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    char obtenerCaracterASCII(void)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 char obtenerCaracterASCII(void)
 {
   return obtenerLetra();
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    char obtenerLetra (void)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 char obtenerLetra (void)   // Sólo ASCII VÁLIDO.
 {
@@ -1657,6 +1711,33 @@ int pedirEntero (char msjtxt[], int ncols)
   return obtenerEntero();
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    int pedirEnteroPositivo (char msjtxt[], int ncols, boolean mostrarerror)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 int pedirEnteroPositivo (char msjtxt[], int ncols, boolean mostrarerror)
 {
@@ -1683,6 +1764,33 @@ int pedirEnteroPositivo (char msjtxt[], int ncols, boolean mostrarerror)
   return num;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    int pedirEnteroIntervalo (char msjtxt[], int ncols, boolean mostrarerror, int min, int max)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 int pedirEnteroIntervalo (char msjtxt[], int ncols, boolean mostrarerror, int min, int max)
 {
@@ -1710,6 +1818,33 @@ int pedirEnteroIntervalo (char msjtxt[], int ncols, boolean mostrarerror, int mi
   return num;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//   int pedirLetra (char msjtxt[], int ncols, boolean mostrarerror, char letra)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 int pedirLetra (char msjtxt[], int ncols, boolean mostrarerror, char letra)
 {
@@ -1740,6 +1875,33 @@ int pedirLetra (char msjtxt[], int ncols, boolean mostrarerror, char letra)
   return pedida;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    int pedirConfirmacion (char msjtxt[], int ncols, boolean mostrarerror)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 int pedirConfirmacion (char msjtxt[], int ncols, boolean mostrarerror)
 {
@@ -1768,6 +1930,33 @@ int pedirConfirmacion (char msjtxt[], int ncols, boolean mostrarerror)
   return letra;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    boolean validarLetraUnica (char original, char dada, boolean sensibleamayusculas)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 boolean validarLetraUnica (char original, char dada, boolean sensibleamayusculas)
 {
@@ -1780,6 +1969,33 @@ boolean validarLetraUnica (char original, char dada, boolean sensibleamayusculas
   return (original == dada);
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    boolean validarLetraConjunto (char letra, char seleccion[], boolean sensibleamayusculas)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 boolean validarLetraConjunto (char letra, char seleccion[], boolean sensibleamayusculas)
 {
@@ -1798,6 +2014,33 @@ boolean validarLetraConjunto (char letra, char seleccion[], boolean sensibleamay
   return resultado;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//    char *cadenaOpcionesDisponibles (char entrada[])
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 char *cadenaOpcionesDisponibles (char entrada[])
 {
@@ -1844,6 +2087,33 @@ char *cadenaOpcionesDisponibles (char entrada[])
   return textofinal;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+//
+//  FUNCIÓN:
+//
+//		int pedirLetraSeleccion (char msjtxt[], int ncols, boolean mostrarerror, char seleccion[], boolean sensibleamayusculas)
+//
+//  USO:
+//
+//    
+//
+//  DETALLES:
+//
+//    
+//
+//  PARÁMETROS DE ENTRADA:
+//
+//    
+//
+//  VALOR DE SALIDA:
+//
+//    
+//
+//  FUNCIONES DE LAS QUE DEPENDE:
+//
+//    
+//
+////////////////////////////////////////////////////////////////////////////////
 
 int pedirLetraSeleccion (char msjtxt[], int ncols, boolean mostrarerror, char seleccion[], boolean sensibleamayusculas)
 {
